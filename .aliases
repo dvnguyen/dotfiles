@@ -9,13 +9,24 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias dp="cd ~/Dropbox/The\ Dump/"
+alias lf="cd ~/Dropbox/The\ Landfill/"
+alias pp="cd ~/Dropbox/Projects/Personal"
+alias pw="cd ~/Dropbox/Projects/Work"
+alias www="cd ~/Dropbox/Projects/www"
 alias g="git"
 alias h="history"
 alias j="jobs"
+
+# My Passport directories
+alias mp="cd /Volumes/My\ Passport"
+alias mpi="cd /Volumes/My\ Passport/Inbox"
+alias mpv="cd /Volumes/My\ Passport/Videos"
+alias mpvm="cd /Volumes/My\ Passport/Videos/Movies"
+alias mpvu="cd /Volumes/My\ Passport/Videos/Unsorted"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
