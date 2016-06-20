@@ -46,3 +46,14 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+#####################################################################
+
+# init z   https://github.com/rupa/z
+. ~/bin/z/z.sh
+
+# Specify where npm packages should be installed
+# Reference: http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/
+NPM_PACKAGES=${HOME}/.npm-packages
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+PATH="$NPM_PACKAGES/bin:$PATH"
